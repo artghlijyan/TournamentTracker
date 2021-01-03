@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TrackerLibrary
+namespace TrackerLib
 {
     public class MatchupModel
     {
