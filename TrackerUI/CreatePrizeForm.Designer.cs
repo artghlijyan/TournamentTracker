@@ -138,11 +138,11 @@ namespace TrackerUI
             this.lbl_OR.CausesValidation = false;
             this.lbl_OR.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.lbl_OR.ForeColor = System.Drawing.Color.Orange;
-            this.lbl_OR.Location = new System.Drawing.Point(131, 172);
+            this.lbl_OR.Location = new System.Drawing.Point(130, 171);
             this.lbl_OR.Name = "lbl_OR";
-            this.lbl_OR.Size = new System.Drawing.Size(18, 21);
+            this.lbl_OR.Size = new System.Drawing.Size(34, 21);
             this.lbl_OR.TabIndex = 26;
-            this.lbl_OR.Text = "S";
+            this.lbl_OR.Text = "-or-";
             // 
             // lbl_PrizePercentage
             // 

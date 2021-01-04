@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using TrackerLib.Models;
 
-namespace TrackerLib
+namespace TrackerLib.DataAccess
 {
     public interface IDataConnection
     {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using TrackerLib;
+using TrackerLib.Models;
 
 namespace TrackerUI
 {
@@ -23,10 +24,9 @@ namespace TrackerUI
                 model.PrizeAmount = decimal.Parse(lbl_PlaceNumber.Text);
                 model.PrizePercentage = double.Parse(lbl_PlaceNumber.Text);
 
-                foreach (var db in GlobalConfig.Connections)
-                {
-                    db.CreatePrize(model);
-                }
+                GlobalConfig.Connection.CreatePrize(model);
+
+                //TODO case when data passed to db and a blank option to create second prize
             }
             else
             {

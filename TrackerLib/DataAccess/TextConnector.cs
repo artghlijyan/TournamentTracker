@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using TrackerLib.Models;
 
-namespace TrackerLib
+namespace TrackerLib.DataAccess
 {
-    public class SqlConnector : IDataConnection
+    public class TextConnector : IDataConnection
     {
         public PrizeModel CreatePrize(PrizeModel prize)
         {

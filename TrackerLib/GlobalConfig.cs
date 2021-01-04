@@ -1,24 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Configuration;
+using TrackerLib.DataAccess;
 
 namespace TrackerLib
 {
+    public enum DataStorage
+    {
+        Sql,
+        LocalFile
+    }
+
     public static class GlobalConfig
     {
-        public static List<IDataConnection> Connections { get; private set; }
+        public static IDataConnection Connection { get; private set; }
 
-        public static void InitializeConnection(bool dataBase, bool textFile)
+        public static void InitializeConnection(DataStorage storage)
         {
-            if (dataBase)
+            switch (storage)
             {
-
+                case DataStorage.Sql: Connection = new SqlConnector();
+                    break;
+                case DataStorage.LocalFile: Connection = new TextConnector();
+                    break;
             }
+        }
 
-            if (textFile)
-            {
-
-            }
+        public static string ConString(string name)
+        {
+            return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
     }
 }

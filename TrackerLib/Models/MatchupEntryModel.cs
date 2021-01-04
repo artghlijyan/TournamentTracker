@@ -1,4 +1,4 @@
-﻿namespace TrackerLib
+﻿namespace TrackerLib.Models
 {
     public class MatchupEntryModel
     {
