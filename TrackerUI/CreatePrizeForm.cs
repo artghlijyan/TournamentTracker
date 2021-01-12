@@ -17,7 +17,7 @@ namespace TrackerUI
         {
             if (this.ValidateForm())
             {
-                PrizeModel prizeModel = new PrizeModel
+                PrizeModel prize = new PrizeModel
                 {
                     PlaceName = lbl_PlaceName.Text,
                     PlaceNumber = int.Parse(lbl_PlaceNumber.Text),
@@ -25,7 +25,8 @@ namespace TrackerUI
                     PrizePercentage = double.Parse(lbl_PlaceNumber.Text),
                 };
 
-                DataConfig.Agent.CreatePrize(prizeModel);
+                DataConfig config = new DataConfig(AgentType.Sql);
+                config.Agent.CreatePrize(prize);
                 //TODO case when data passed to db and a blank option to create second prize
             }
             else

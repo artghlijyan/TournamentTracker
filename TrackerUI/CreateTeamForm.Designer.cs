@@ -37,13 +37,13 @@ namespace TrackerUI
             this.btn_AddTeamMember = new System.Windows.Forms.Button();
             this.groupB_AddNewMember = new System.Windows.Forms.GroupBox();
             this.btn_CreateMember = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textB_Mobile = new System.Windows.Forms.TextBox();
             this.lbl_Cellphone = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textB_Email = new System.Windows.Forms.TextBox();
             this.lbl_Email = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textB_LastName = new System.Windows.Forms.TextBox();
             this.lbl_LastName = new System.Windows.Forms.Label();
-            this.textB_FirstNameValue = new System.Windows.Forms.TextBox();
+            this.textB_FirstName = new System.Windows.Forms.TextBox();
             this.lb_FirstName = new System.Windows.Forms.Label();
             this.listB_TeamMembers = new System.Windows.Forms.ListBox();
             this.btn_DeleteSelectedMember = new System.Windows.Forms.Button();
@@ -126,13 +126,13 @@ namespace TrackerUI
             // groupB_AddNewMember
             // 
             this.groupB_AddNewMember.Controls.Add(this.btn_CreateMember);
-            this.groupB_AddNewMember.Controls.Add(this.textBox3);
+            this.groupB_AddNewMember.Controls.Add(this.textB_Mobile);
             this.groupB_AddNewMember.Controls.Add(this.lbl_Cellphone);
-            this.groupB_AddNewMember.Controls.Add(this.textBox2);
+            this.groupB_AddNewMember.Controls.Add(this.textB_Email);
             this.groupB_AddNewMember.Controls.Add(this.lbl_Email);
-            this.groupB_AddNewMember.Controls.Add(this.textBox1);
+            this.groupB_AddNewMember.Controls.Add(this.textB_LastName);
             this.groupB_AddNewMember.Controls.Add(this.lbl_LastName);
-            this.groupB_AddNewMember.Controls.Add(this.textB_FirstNameValue);
+            this.groupB_AddNewMember.Controls.Add(this.textB_FirstName);
             this.groupB_AddNewMember.Controls.Add(this.lb_FirstName);
             this.groupB_AddNewMember.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupB_AddNewMember.ForeColor = System.Drawing.Color.Orange;
@@ -159,14 +159,13 @@ namespace TrackerUI
             this.btn_CreateMember.UseVisualStyleBackColor = false;
             this.btn_CreateMember.Click += new System.EventHandler(this.btn_CreateMember_Click);
             // 
-            // textBox3
+            // textB_Mobile
             // 
-            this.textBox3.BackColor = System.Drawing.Color.DimGray;
-            this.textBox3.Location = new System.Drawing.Point(92, 123);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 29);
-            this.textBox3.TabIndex = 19;
-            this.textBox3.Text = "<none>";
+            this.textB_Mobile.BackColor = System.Drawing.Color.DimGray;
+            this.textB_Mobile.Location = new System.Drawing.Point(92, 123);
+            this.textB_Mobile.Name = "textB_Mobile";
+            this.textB_Mobile.Size = new System.Drawing.Size(191, 29);
+            this.textB_Mobile.TabIndex = 19;
             // 
             // lbl_Cellphone
             // 
@@ -176,18 +175,17 @@ namespace TrackerUI
             this.lbl_Cellphone.ForeColor = System.Drawing.Color.Orange;
             this.lbl_Cellphone.Location = new System.Drawing.Point(6, 120);
             this.lbl_Cellphone.Name = "lbl_Cellphone";
-            this.lbl_Cellphone.Size = new System.Drawing.Size(78, 21);
+            this.lbl_Cellphone.Size = new System.Drawing.Size(55, 21);
             this.lbl_Cellphone.TabIndex = 18;
-            this.lbl_Cellphone.Text = "Cellphone";
+            this.lbl_Cellphone.Text = "Mobile";
             // 
-            // textBox2
+            // textB_Email
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(92, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 29);
-            this.textBox2.TabIndex = 17;
-            this.textBox2.Text = "<none>";
+            this.textB_Email.BackColor = System.Drawing.Color.DimGray;
+            this.textB_Email.Location = new System.Drawing.Point(92, 95);
+            this.textB_Email.Name = "textB_Email";
+            this.textB_Email.Size = new System.Drawing.Size(191, 29);
+            this.textB_Email.TabIndex = 17;
             // 
             // lbl_Email
             // 
@@ -201,14 +199,13 @@ namespace TrackerUI
             this.lbl_Email.TabIndex = 16;
             this.lbl_Email.Text = "Email";
             // 
-            // textBox1
+            // textB_LastName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(92, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 29);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.Text = "<none>";
+            this.textB_LastName.BackColor = System.Drawing.Color.DimGray;
+            this.textB_LastName.Location = new System.Drawing.Point(92, 67);
+            this.textB_LastName.Name = "textB_LastName";
+            this.textB_LastName.Size = new System.Drawing.Size(191, 29);
+            this.textB_LastName.TabIndex = 15;
             // 
             // lbl_LastName
             // 
@@ -222,14 +219,13 @@ namespace TrackerUI
             this.lbl_LastName.TabIndex = 14;
             this.lbl_LastName.Text = "Last Name";
             // 
-            // textB_FirstNameValue
+            // textB_FirstName
             // 
-            this.textB_FirstNameValue.BackColor = System.Drawing.Color.DimGray;
-            this.textB_FirstNameValue.Location = new System.Drawing.Point(92, 39);
-            this.textB_FirstNameValue.Name = "textB_FirstNameValue";
-            this.textB_FirstNameValue.Size = new System.Drawing.Size(191, 29);
-            this.textB_FirstNameValue.TabIndex = 13;
-            this.textB_FirstNameValue.Text = "<none>";
+            this.textB_FirstName.BackColor = System.Drawing.Color.DimGray;
+            this.textB_FirstName.Location = new System.Drawing.Point(92, 39);
+            this.textB_FirstName.Name = "textB_FirstName";
+            this.textB_FirstName.Size = new System.Drawing.Size(191, 29);
+            this.textB_FirstName.TabIndex = 13;
             // 
             // lb_FirstName
             // 
@@ -320,13 +316,13 @@ namespace TrackerUI
         private System.Windows.Forms.Button btn_AddTeamMember;
         private System.Windows.Forms.GroupBox groupB_AddNewMember;
         private System.Windows.Forms.Button btn_CreateMember;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textB_Mobile;
         private System.Windows.Forms.Label lbl_Cellphone;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textB_Email;
         private System.Windows.Forms.Label lbl_Email;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textB_LastName;
         private System.Windows.Forms.Label lbl_LastName;
-        private System.Windows.Forms.TextBox textB_FirstNameValue;
+        private System.Windows.Forms.TextBox textB_FirstName;
         private System.Windows.Forms.Label lb_FirstName;
         private System.Windows.Forms.ListBox listB_TeamMembers;
         private System.Windows.Forms.Button btn_DeleteSelectedMember;

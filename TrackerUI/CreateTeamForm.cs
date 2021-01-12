@@ -18,15 +18,17 @@ namespace TrackerUI
                 MessageBox.Show("All Fields must be filled");
             }
 
-            var personModel = new PersonModel
+            var person = new PersonModel
             {
-                FirstName = lb_FirstName.Text,
-                LastName = lb_FirstName.Text,
-                EmailAddress = lbl_Email.Text,
-                Mobile = lbl_Cellphone.Text,
+                FirstName = textB_FirstName.Text,
+                LastName = textB_LastName.Text,
+                EmailAddress = textB_Email.Text,
+                Mobile = textB_Mobile.Text,
             };
 
-            DataConfig.Agent.CreatePerson(personModel);
+            DataConfig config = new DataConfig(AgentType.Sql);
+            config.Agent.CreatePerson(person);
+            //TODO case when data passed to db and a blank option to create second prize
         }
 
         private bool ValidateForm()
