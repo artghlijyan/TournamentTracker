@@ -58,7 +58,6 @@ namespace TrackerUI
             this.lb_Header.Size = new System.Drawing.Size(191, 30);
             this.lb_Header.TabIndex = 0;
             this.lb_Header.Text = "Tournament:";
-            this.lb_Header.Click += new System.EventHandler(this.lb_Header_Click);
             // 
             // lb_TournamentName
             // 
@@ -73,7 +72,6 @@ namespace TrackerUI
             this.lb_TournamentName.Size = new System.Drawing.Size(107, 30);
             this.lb_TournamentName.TabIndex = 1;
             this.lb_TournamentName.Text = "<none>";
-            this.lb_TournamentName.Click += new System.EventHandler(this.lb_TournamentName_Click);
             // 
             // lb_Round
             // 
@@ -110,7 +108,6 @@ namespace TrackerUI
             this.checkb_UnplayedOnly.TabIndex = 4;
             this.checkb_UnplayedOnly.Text = "Unplayed Only";
             this.checkb_UnplayedOnly.UseVisualStyleBackColor = true;
-            this.checkb_UnplayedOnly.CheckedChanged += new System.EventHandler(this.checkb_UnplayedOnly_CheckedChanged);
             // 
             // listB_Matchup
             // 
@@ -237,7 +234,6 @@ namespace TrackerUI
             this.ForeColor = System.Drawing.Color.Orange;
             this.Name = "TournamentViewerForm";
             this.Text = "Tournament Viewer";
-            this.Load += new System.EventHandler(this.TournamentViewerForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

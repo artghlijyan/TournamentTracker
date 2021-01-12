@@ -67,4 +67,7 @@
     <Build Include="dbo\Tables\TournamentPrizes.sql" />
     <Build Include="dbo\Stored Procedures\sp_InsertIntoPrizes.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo.TournamentTracker.publish.xml" />
+  </ItemGroup>
 </Project>

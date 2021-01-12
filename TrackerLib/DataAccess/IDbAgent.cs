@@ -2,8 +2,9 @@
 
 namespace TrackerLib.DataAccess
 {
-    public interface IDataConnection
+    public interface IDbAgent
     {
         PrizeModel CreatePrize(PrizeModel prize);
+        PersonModel CreatePerson(PersonModel personModel);
     }
 }

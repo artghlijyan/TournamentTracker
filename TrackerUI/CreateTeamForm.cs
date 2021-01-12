@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using TrackerLib;
+using TrackerLib.Models;
 
 namespace TrackerUI
 {
@@ -17,24 +11,35 @@ namespace TrackerUI
             InitializeComponent();
         }
 
-        private void checkb_UnplayedOnly_CheckedChanged(object sender, EventArgs e)
+        private void btn_CreateMember_Click(object sender, System.EventArgs e)
         {
+            if (!ValidateForm())
+            {
+                MessageBox.Show("All Fields must be filled");
+            }
 
+            var personModel = new PersonModel
+            {
+                FirstName = lb_FirstName.Text,
+                LastName = lb_FirstName.Text,
+                EmailAddress = lbl_Email.Text,
+                Mobile = lbl_Cellphone.Text,
+            };
+
+            DataConfig.Agent.CreatePerson(personModel);
         }
 
-        private void TournamentViewerForm_Load(object sender, EventArgs e)
+        private bool ValidateForm()
         {
+            if (string.IsNullOrWhiteSpace(lb_FirstName.Text)
+                || string.IsNullOrWhiteSpace(lb_FirstName.Text)
+                || string.IsNullOrWhiteSpace(lbl_Email.Text)
+                || string.IsNullOrWhiteSpace(lbl_Cellphone.Text))
+            {
+                return false;
+            }
 
-        }
-
-        private void lb_Header_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_TournamentName_Click(object sender, EventArgs e)
-        {
-
+            return true;
         }
     }
 }

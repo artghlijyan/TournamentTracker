@@ -61,7 +61,6 @@ namespace TrackerUI
             this.lb_Header.Size = new System.Drawing.Size(294, 30);
             this.lb_Header.TabIndex = 0;
             this.lb_Header.Text = "Create Tournament";
-            this.lb_Header.Click += new System.EventHandler(this.lb_Header_Click);
             // 
             // lb_TournamentName
             // 
@@ -103,7 +102,6 @@ namespace TrackerUI
             this.textB_EntryFeeValue.Size = new System.Drawing.Size(100, 22);
             this.textB_EntryFeeValue.TabIndex = 11;
             this.textB_EntryFeeValue.Text = "0";
-            this.textB_EntryFeeValue.TextChanged += new System.EventHandler(this.textB_TeamTwoScoreValue_TextChanged);
             // 
             // btn_AddTeam
             // 
@@ -286,7 +284,6 @@ namespace TrackerUI
             this.ForeColor = System.Drawing.Color.Orange;
             this.Name = "CreateTournamentForm";
             this.Text = "Create Tournament";
-            this.Load += new System.EventHandler(this.TournamentViewerForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

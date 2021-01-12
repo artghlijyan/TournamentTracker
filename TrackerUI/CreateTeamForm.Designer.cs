@@ -36,15 +36,15 @@ namespace TrackerUI
             this.lb_SelectTeamMember = new System.Windows.Forms.Label();
             this.btn_AddTeamMember = new System.Windows.Forms.Button();
             this.groupB_AddNewMember = new System.Windows.Forms.GroupBox();
-            this.textB_FirstNameValue = new System.Windows.Forms.TextBox();
-            this.lb_FirstName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbl_LastName = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lbl_Email = new System.Windows.Forms.Label();
+            this.btn_CreateMember = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbl_Cellphone = new System.Windows.Forms.Label();
-            this.btn_CreateMember = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lbl_Email = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbl_LastName = new System.Windows.Forms.Label();
+            this.textB_FirstNameValue = new System.Windows.Forms.TextBox();
+            this.lb_FirstName = new System.Windows.Forms.Label();
             this.listB_TeamMembers = new System.Windows.Forms.ListBox();
             this.btn_DeleteSelectedMember = new System.Windows.Forms.Button();
             this.btn_CreateTournament = new System.Windows.Forms.Button();
@@ -64,7 +64,6 @@ namespace TrackerUI
             this.lb_Header.Size = new System.Drawing.Size(196, 30);
             this.lb_Header.TabIndex = 0;
             this.lb_Header.Text = "Create Team";
-            this.lb_Header.Click += new System.EventHandler(this.lb_Header_Click);
             // 
             // textB_TeamNameValue
             // 
@@ -144,68 +143,21 @@ namespace TrackerUI
             this.groupB_AddNewMember.TabStop = false;
             this.groupB_AddNewMember.Text = "Add New Member";
             // 
-            // textB_FirstNameValue
+            // btn_CreateMember
             // 
-            this.textB_FirstNameValue.BackColor = System.Drawing.Color.DimGray;
-            this.textB_FirstNameValue.Location = new System.Drawing.Point(92, 39);
-            this.textB_FirstNameValue.Name = "textB_FirstNameValue";
-            this.textB_FirstNameValue.Size = new System.Drawing.Size(191, 29);
-            this.textB_FirstNameValue.TabIndex = 13;
-            this.textB_FirstNameValue.Text = "<none>";
-            // 
-            // lb_FirstName
-            // 
-            this.lb_FirstName.AutoSize = true;
-            this.lb_FirstName.CausesValidation = false;
-            this.lb_FirstName.Font = new System.Drawing.Font("Segoe UI Light", 12F);
-            this.lb_FirstName.ForeColor = System.Drawing.Color.Orange;
-            this.lb_FirstName.Location = new System.Drawing.Point(6, 36);
-            this.lb_FirstName.Name = "lb_FirstName";
-            this.lb_FirstName.Size = new System.Drawing.Size(80, 21);
-            this.lb_FirstName.TabIndex = 12;
-            this.lb_FirstName.Text = "First Name";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(92, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 29);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.Text = "<none>";
-            // 
-            // lbl_LastName
-            // 
-            this.lbl_LastName.AutoSize = true;
-            this.lbl_LastName.CausesValidation = false;
-            this.lbl_LastName.Font = new System.Drawing.Font("Segoe UI Light", 12F);
-            this.lbl_LastName.ForeColor = System.Drawing.Color.Orange;
-            this.lbl_LastName.Location = new System.Drawing.Point(6, 64);
-            this.lbl_LastName.Name = "lbl_LastName";
-            this.lbl_LastName.Size = new System.Drawing.Size(80, 21);
-            this.lbl_LastName.TabIndex = 14;
-            this.lbl_LastName.Text = "Last Name";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(92, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 29);
-            this.textBox2.TabIndex = 17;
-            this.textBox2.Text = "<none>";
-            // 
-            // lbl_Email
-            // 
-            this.lbl_Email.AutoSize = true;
-            this.lbl_Email.CausesValidation = false;
-            this.lbl_Email.Font = new System.Drawing.Font("Segoe UI Light", 12F);
-            this.lbl_Email.ForeColor = System.Drawing.Color.Orange;
-            this.lbl_Email.Location = new System.Drawing.Point(6, 92);
-            this.lbl_Email.Name = "lbl_Email";
-            this.lbl_Email.Size = new System.Drawing.Size(45, 21);
-            this.lbl_Email.TabIndex = 16;
-            this.lbl_Email.Text = "Email";
+            this.btn_CreateMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_CreateMember.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_CreateMember.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.btn_CreateMember.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_CreateMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CreateMember.Font = new System.Drawing.Font("Algerian", 12F);
+            this.btn_CreateMember.Location = new System.Drawing.Point(137, 158);
+            this.btn_CreateMember.Name = "btn_CreateMember";
+            this.btn_CreateMember.Size = new System.Drawing.Size(146, 30);
+            this.btn_CreateMember.TabIndex = 20;
+            this.btn_CreateMember.Text = "Create Member";
+            this.btn_CreateMember.UseVisualStyleBackColor = false;
+            this.btn_CreateMember.Click += new System.EventHandler(this.btn_CreateMember_Click);
             // 
             // textBox3
             // 
@@ -228,20 +180,68 @@ namespace TrackerUI
             this.lbl_Cellphone.TabIndex = 18;
             this.lbl_Cellphone.Text = "Cellphone";
             // 
-            // btn_CreateMember
+            // textBox2
             // 
-            this.btn_CreateMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_CreateMember.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btn_CreateMember.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            this.btn_CreateMember.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btn_CreateMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CreateMember.Font = new System.Drawing.Font("Algerian", 12F);
-            this.btn_CreateMember.Location = new System.Drawing.Point(137, 158);
-            this.btn_CreateMember.Name = "btn_CreateMember";
-            this.btn_CreateMember.Size = new System.Drawing.Size(146, 30);
-            this.btn_CreateMember.TabIndex = 20;
-            this.btn_CreateMember.Text = "Create Member";
-            this.btn_CreateMember.UseVisualStyleBackColor = false;
+            this.textBox2.BackColor = System.Drawing.Color.DimGray;
+            this.textBox2.Location = new System.Drawing.Point(92, 95);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(191, 29);
+            this.textBox2.TabIndex = 17;
+            this.textBox2.Text = "<none>";
+            // 
+            // lbl_Email
+            // 
+            this.lbl_Email.AutoSize = true;
+            this.lbl_Email.CausesValidation = false;
+            this.lbl_Email.Font = new System.Drawing.Font("Segoe UI Light", 12F);
+            this.lbl_Email.ForeColor = System.Drawing.Color.Orange;
+            this.lbl_Email.Location = new System.Drawing.Point(6, 92);
+            this.lbl_Email.Name = "lbl_Email";
+            this.lbl_Email.Size = new System.Drawing.Size(45, 21);
+            this.lbl_Email.TabIndex = 16;
+            this.lbl_Email.Text = "Email";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.DimGray;
+            this.textBox1.Location = new System.Drawing.Point(92, 67);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(191, 29);
+            this.textBox1.TabIndex = 15;
+            this.textBox1.Text = "<none>";
+            // 
+            // lbl_LastName
+            // 
+            this.lbl_LastName.AutoSize = true;
+            this.lbl_LastName.CausesValidation = false;
+            this.lbl_LastName.Font = new System.Drawing.Font("Segoe UI Light", 12F);
+            this.lbl_LastName.ForeColor = System.Drawing.Color.Orange;
+            this.lbl_LastName.Location = new System.Drawing.Point(6, 64);
+            this.lbl_LastName.Name = "lbl_LastName";
+            this.lbl_LastName.Size = new System.Drawing.Size(80, 21);
+            this.lbl_LastName.TabIndex = 14;
+            this.lbl_LastName.Text = "Last Name";
+            // 
+            // textB_FirstNameValue
+            // 
+            this.textB_FirstNameValue.BackColor = System.Drawing.Color.DimGray;
+            this.textB_FirstNameValue.Location = new System.Drawing.Point(92, 39);
+            this.textB_FirstNameValue.Name = "textB_FirstNameValue";
+            this.textB_FirstNameValue.Size = new System.Drawing.Size(191, 29);
+            this.textB_FirstNameValue.TabIndex = 13;
+            this.textB_FirstNameValue.Text = "<none>";
+            // 
+            // lb_FirstName
+            // 
+            this.lb_FirstName.AutoSize = true;
+            this.lb_FirstName.CausesValidation = false;
+            this.lb_FirstName.Font = new System.Drawing.Font("Segoe UI Light", 12F);
+            this.lb_FirstName.ForeColor = System.Drawing.Color.Orange;
+            this.lb_FirstName.Location = new System.Drawing.Point(6, 36);
+            this.lb_FirstName.Name = "lb_FirstName";
+            this.lb_FirstName.Size = new System.Drawing.Size(80, 21);
+            this.lb_FirstName.TabIndex = 12;
+            this.lb_FirstName.Text = "First Name";
             // 
             // listB_TeamMembers
             // 
@@ -303,7 +303,6 @@ namespace TrackerUI
             this.ForeColor = System.Drawing.Color.Orange;
             this.Name = "CreateTeamForm";
             this.Text = "Create Team";
-            this.Load += new System.EventHandler(this.TournamentViewerForm_Load);
             this.groupB_AddNewMember.ResumeLayout(false);
             this.groupB_AddNewMember.PerformLayout();
             this.ResumeLayout(false);

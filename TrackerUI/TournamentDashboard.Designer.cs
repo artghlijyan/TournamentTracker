@@ -49,7 +49,6 @@ namespace TrackerUI
             this.lb_Header.Size = new System.Drawing.Size(346, 30);
             this.lb_Header.TabIndex = 0;
             this.lb_Header.Text = "Tournament Dashboard";
-            this.lb_Header.Click += new System.EventHandler(this.lb_Header_Click);
             // 
             // lb_LoadExistingTournament
             // 
@@ -62,7 +61,6 @@ namespace TrackerUI
             this.lb_LoadExistingTournament.Size = new System.Drawing.Size(181, 21);
             this.lb_LoadExistingTournament.TabIndex = 12;
             this.lb_LoadExistingTournament.Text = "Load Existing Tournament";
-            this.lb_LoadExistingTournament.Click += new System.EventHandler(this.lb_FirstName_Click);
             // 
             // btn_LoadTournament
             // 
@@ -120,7 +118,6 @@ namespace TrackerUI
             this.ForeColor = System.Drawing.Color.Orange;
             this.Name = "TounramentDashboard";
             this.Text = "Tournament Dashboard";
-            this.Load += new System.EventHandler(this.TournamentViewerForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
