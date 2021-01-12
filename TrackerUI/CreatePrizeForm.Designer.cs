@@ -30,16 +30,16 @@ namespace TrackerUI
         private void InitializeComponent()
         {
             this.lbl_Header = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textB_PrizeAmount = new System.Windows.Forms.TextBox();
             this.lbl_PrizeAmount = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textB_PlaceName = new System.Windows.Forms.TextBox();
             this.lbl_PlaceName = new System.Windows.Forms.Label();
-            this.textB_FirstNameValue = new System.Windows.Forms.TextBox();
+            this.textB_PlaceNumber = new System.Windows.Forms.TextBox();
             this.lbl_PlaceNumber = new System.Windows.Forms.Label();
             this.btn_CreatePrize = new System.Windows.Forms.Button();
             this.lbl_OR = new System.Windows.Forms.Label();
             this.lbl_PrizePercentage = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textB_PrizePercentage = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_Header
@@ -56,13 +56,13 @@ namespace TrackerUI
             this.lbl_Header.TabIndex = 0;
             this.lbl_Header.Text = "Create Prize";
             // 
-            // textBox2
+            // textB_PrizeAmount
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(135, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 22);
-            this.textBox2.TabIndex = 17;
+            this.textB_PrizeAmount.BackColor = System.Drawing.Color.DimGray;
+            this.textB_PrizeAmount.Location = new System.Drawing.Point(135, 142);
+            this.textB_PrizeAmount.Name = "textB_PrizeAmount";
+            this.textB_PrizeAmount.Size = new System.Drawing.Size(191, 22);
+            this.textB_PrizeAmount.TabIndex = 17;
             // 
             // lbl_PrizeAmount
             // 
@@ -76,13 +76,13 @@ namespace TrackerUI
             this.lbl_PrizeAmount.TabIndex = 16;
             this.lbl_PrizeAmount.Text = "Prize Amount";
             // 
-            // textBox1
+            // textB_PlaceName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(135, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 22);
-            this.textBox1.TabIndex = 15;
+            this.textB_PlaceName.BackColor = System.Drawing.Color.DimGray;
+            this.textB_PlaceName.Location = new System.Drawing.Point(135, 114);
+            this.textB_PlaceName.Name = "textB_PlaceName";
+            this.textB_PlaceName.Size = new System.Drawing.Size(191, 22);
+            this.textB_PlaceName.TabIndex = 15;
             // 
             // lbl_PlaceName
             // 
@@ -96,13 +96,13 @@ namespace TrackerUI
             this.lbl_PlaceName.TabIndex = 14;
             this.lbl_PlaceName.Text = "Place Name";
             // 
-            // textB_FirstNameValue
+            // textB_PlaceNumber
             // 
-            this.textB_FirstNameValue.BackColor = System.Drawing.Color.DimGray;
-            this.textB_FirstNameValue.Location = new System.Drawing.Point(135, 86);
-            this.textB_FirstNameValue.Name = "textB_FirstNameValue";
-            this.textB_FirstNameValue.Size = new System.Drawing.Size(191, 22);
-            this.textB_FirstNameValue.TabIndex = 13;
+            this.textB_PlaceNumber.BackColor = System.Drawing.Color.DimGray;
+            this.textB_PlaceNumber.Location = new System.Drawing.Point(135, 86);
+            this.textB_PlaceNumber.Name = "textB_PlaceNumber";
+            this.textB_PlaceNumber.Size = new System.Drawing.Size(191, 22);
+            this.textB_PlaceNumber.TabIndex = 13;
             // 
             // lbl_PlaceNumber
             // 
@@ -156,13 +156,13 @@ namespace TrackerUI
             this.lbl_PrizePercentage.TabIndex = 27;
             this.lbl_PrizePercentage.Text = "Prize Percentage";
             // 
-            // textBox4
+            // textB_PrizePercentage
             // 
-            this.textBox4.BackColor = System.Drawing.Color.DimGray;
-            this.textBox4.Location = new System.Drawing.Point(151, 201);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(175, 22);
-            this.textBox4.TabIndex = 28;
+            this.textB_PrizePercentage.BackColor = System.Drawing.Color.DimGray;
+            this.textB_PrizePercentage.Location = new System.Drawing.Point(151, 201);
+            this.textB_PrizePercentage.Name = "textB_PrizePercentage";
+            this.textB_PrizePercentage.Size = new System.Drawing.Size(175, 22);
+            this.textB_PrizePercentage.TabIndex = 28;
             // 
             // CreatePrizeForm
             // 
@@ -170,17 +170,17 @@ namespace TrackerUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(353, 330);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textB_PrizePercentage);
             this.Controls.Add(this.lbl_PrizePercentage);
             this.Controls.Add(this.lbl_OR);
             this.Controls.Add(this.btn_CreatePrize);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textB_PrizeAmount);
             this.Controls.Add(this.lbl_PrizeAmount);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textB_PlaceName);
             this.Controls.Add(this.lbl_Header);
             this.Controls.Add(this.lbl_PlaceName);
             this.Controls.Add(this.lbl_PlaceNumber);
-            this.Controls.Add(this.textB_FirstNameValue);
+            this.Controls.Add(this.textB_PlaceNumber);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.ForeColor = System.Drawing.Color.Orange;
             this.Name = "CreatePrizeForm";
@@ -193,16 +193,16 @@ namespace TrackerUI
         #endregion
 
         private System.Windows.Forms.Label lbl_Header;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textB_PrizeAmount;
         private System.Windows.Forms.Label lbl_PrizeAmount;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textB_PlaceName;
         private System.Windows.Forms.Label lbl_PlaceName;
-        private System.Windows.Forms.TextBox textB_FirstNameValue;
+        private System.Windows.Forms.TextBox textB_PlaceNumber;
         private System.Windows.Forms.Label lbl_PlaceNumber;
         private System.Windows.Forms.Button btn_CreatePrize;
         private System.Windows.Forms.Label lbl_OR;
         private System.Windows.Forms.Label lbl_PrizePercentage;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textB_PrizePercentage;
     }
 }
 

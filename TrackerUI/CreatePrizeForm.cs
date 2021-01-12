@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using TrackerLib;
-using TrackerLib.DataAccess;
 using TrackerLib.Models;
 
 namespace TrackerUI
@@ -19,10 +18,10 @@ namespace TrackerUI
             {
                 PrizeModel prize = new PrizeModel
                 {
-                    PlaceName = lbl_PlaceName.Text,
-                    PlaceNumber = int.Parse(lbl_PlaceNumber.Text),
-                    PrizeAmount = decimal.Parse(lbl_PlaceNumber.Text),
-                    PrizePercentage = double.Parse(lbl_PlaceNumber.Text),
+                    PlaceName = textB_PlaceName.Text,
+                    PlaceNumber = int.Parse(textB_PlaceNumber.Text),
+                    PrizeAmount = decimal.Parse(textB_PrizeAmount.Text),
+                    PrizePercentage = double.Parse(textB_PrizePercentage.Text),
                 };
 
                 DataConfig config = new DataConfig(AgentType.Sql);
@@ -38,15 +37,15 @@ namespace TrackerUI
         private bool ValidateForm()
         {
             bool validPlaceNumber = int.TryParse(
-                lbl_PlaceNumber.Text, out int placeNumber);
+                textB_PlaceNumber.Text, out int placeNumber);
             
             bool validPrizeAmount = decimal.TryParse(
-                lbl_PrizeAmount.Text, out decimal prizeAmount);
+                textB_PrizeAmount.Text, out decimal prizeAmount);
 
             bool validPrizePercentage = double.TryParse(
-                lbl_PrizePercentage.Text, out double prizePercentage);
+                textB_PrizePercentage.Text, out double prizePercentage);
 
-            string placeName = lbl_PlaceName.Text;
+            string placeName = textB_PlaceName.Text;
 
             if (validPlaceNumber && validPrizeAmount && validPrizePercentage)
             {

@@ -33,10 +33,10 @@ namespace TrackerUI
 
         private bool ValidateForm()
         {
-            if (string.IsNullOrWhiteSpace(lb_FirstName.Text)
-                || string.IsNullOrWhiteSpace(lb_FirstName.Text)
-                || string.IsNullOrWhiteSpace(lbl_Email.Text)
-                || string.IsNullOrWhiteSpace(lbl_Cellphone.Text))
+            if (string.IsNullOrWhiteSpace(textB_FirstName.Text)
+                || string.IsNullOrWhiteSpace(textB_LastName.Text)
+                || string.IsNullOrWhiteSpace(textB_Email.Text)
+                || string.IsNullOrWhiteSpace(textB_Mobile.Text))
             {
                 return false;
             }
