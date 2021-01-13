@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Collections.Generic;
+using System.Windows.Forms;
 using TrackerLib;
 using TrackerLib.Models;
 
@@ -6,9 +7,21 @@ namespace TrackerUI
 {
     public partial class CreateTeamForm : Form
     {
+        private List<PersonModel> availableTeamMembers = new List<PersonModel>();
+        private List<PersonModel> selectedTeamMembers = new List<PersonModel>();
+
         public CreateTeamForm()
         {
             InitializeComponent();
+        }
+
+        private void WireUpLists()
+        {
+            dd_SelectTeamMember.DataSource = availableTeamMembers;
+            dd_SelectTeamMember.DisplayMember = "FullName";
+            
+            listB_TeamMembers.DataSource = selectedTeamMembers;
+            dd_SelectTeamMember.DisplayMember = "FullName";
         }
 
         private void btn_CreateMember_Click(object sender, System.EventArgs e)
